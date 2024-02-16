@@ -4,30 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assests/css/style.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="row">
-          <div class="logo col-sm-12 col-md-4">
-            <img src="assests/imges/puplic/Logo.svg" />
-            <a href="#">mangcoding Store</a>
+        <div class="row ">
+          
+          <div class=" col-sm-6 col-md-2">
+            <div class="logo  ">
+              <img src="assests/imges/puplic/Logo.svg" />
+              <a href="#">mangcoding Store</a>
+            </div>
           </div>
-          <nav class="list col-sm-12 col-md-4 ">
-            <ul>
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#"> Course</a></li>
-              <li><a href="#">AboutUs</a></li>
-              <li><a href="#">Article</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="auth col-sm-12 col-md-4">
-            <a href="#" class="log">Log in</a>
-            <a href="#" class="reg">Register</a>
+          <div class="  col-md-6 d-sm-none d-none d-md-block ">
+            <nav class="list  ">
+              <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#"> Course</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">Article</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
           </div>
+          <div class=" col-md-4 d-sm-none d-none d-md-block">
+            <div class="auth  ">
+              <a href="#" class="log">Log in</a>
+              <a href="#" class="reg">Register</a>
+            </div>
+          </div>
+          <div class=" col-sm-6 col-md-4 d-md-none d-lg-none d-sm-block"><i class="fa-solid fa-bars"></i></div>
+          
         </div>
       </div>
     </header>
@@ -35,8 +46,9 @@
       <section class="home">
         <div class="container">
           <p class="hint">Let’s <span class="active">Begins</span></p>
-          <div class="row">
-            <div class="write col-sm-6 fs-5">
+          <div class="row ">
+
+            <div class="col-sm-12 col-md-6 d-md-flex gx-5 "><div class="write ">
               <h1>
                 Let's Find The<br />Right<span> Course </span>For<br />you
               </h1>
@@ -52,10 +64,11 @@
                   <a href="#">Play Video</a>
                 </div>
               </div>
-            </div>
-            <div class="pic col-sm-6 ">
-              <img src=" assests/imges/puplic/welcome.png " class="img-fluid"/>
-            </div>
+            </div></div>
+            <div class="col-sm-12 img-fluid col-md-6 d-flex justify-content-end">  <div class="pic  ">
+              <img src=" assests/imges/puplic/welcome.png " />
+            </div></div>
+          
           </div>
           <div class="give"><p>what we give</p></div>
         </div>
@@ -63,51 +76,63 @@
       <section class="about-us">
         <div class="container">
           <div class="row">
-           <div class="about-start col-sm-12">
-            <h2>What do You<br> Get From Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.</p>
-           </div>
-           <div class="about-end col-sm-12">
-            <div class="end-items">
-              <div class="img-items"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M7.08778 6.90481C8.15231 6.90481 9.01529 6.04184 9.01529 4.97731C9.01529 3.91278 8.15231 3.0498 7.08778 3.0498C6.02325 3.0498 5.16028 3.91278 5.16028 4.97731C5.16028 6.04184 6.02325 6.90481 7.08778 6.90481Z" stroke="#F0C932" stroke-width="0.658976" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10.6299 11.7263C10.9923 11.7263 11.2724 11.3749 11.1571 11.0234C10.6024 9.30461 8.99344 8.05804 7.0879 8.05804C5.18237 8.05804 3.57337 9.30461 3.01873 11.0234C2.9089 11.3694 3.18348 11.7263 3.54591 11.7263H10.6299Z" stroke="#F0C932" stroke-width="0.658976" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg></div>
-              <div class="detail-items">
-                <h3>Professional Teacher</h3>
-                <p>Lorem ipsum dolor sit amet<br>, consectetur adipiscing elit<br>. Etiam dignissim, sem non<br> convallis molestie.</p>
+            <div class="d-md-flex justify-content-md-between align-items-md-center ">
+              <div class=" col-12 col-sm-12 col-md-4">
+                <div class="about-start ">
+                  <h2>What do You<br> Get From Us</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.</p>
+                 </div>
               </div>
-            </div>
-            <div class="end-items">
-              <div class="img-items">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                  <path d="M12.2404 5.88336L7.68253 7.60218C7.48483 7.67906 7.27067 7.67906 7.07297 7.60218L2.51506 5.88336C2.27344 5.79549 2.27344 5.466 2.50957 5.37265L7.06748 3.65382C7.26517 3.57694 7.47934 3.57694 7.67703 3.65382L12.2349 5.37265C12.4711 5.46051 12.4711 5.79549 12.2404 5.88336Z" stroke="#F0C932" stroke-width="0.658976" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M2.33396 5.63071V8.44783" stroke="#F0C932" stroke-width="0.658976" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3.89344 6.50943V9.96356C3.89344 10.4633 5.45302 10.8751 7.37503 10.8751C9.29704 10.8751 10.8566 10.4688 10.8566 9.96356V6.50943" stroke="#F0C932" stroke-width="0.658976" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="detail-items">
-                <h3>Course Certificate</h3>
-                <p>Lorem ipsum dolor sit amet<br>, consectetur adipiscing elit<br>. Etiam dignissim, sem non<br> convallis molestie.</p>
-              </div>
-            </div>
-            <div class="end-items">
-              <div class="img-items">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <path d="M6.89302 4.65325L7.21702 5.41107C7.23899 5.47697 7.29939 5.51541 7.3598 5.5209L8.18352 5.59778C8.35924 5.61425 8.42514 5.82842 8.29884 5.94374L7.6783 6.48739C7.62888 6.53133 7.60691 6.59722 7.62339 6.65763L7.80461 7.46488C7.84305 7.63511 7.66183 7.76691 7.50807 7.67904L6.79967 7.2562C6.74475 7.22325 6.67336 7.22325 6.61845 7.2562L5.91005 7.67904C5.76178 7.76691 5.57507 7.63511 5.61351 7.46488L5.79473 6.65763C5.8112 6.59722 5.78924 6.53133 5.73982 6.48739L5.11928 5.94374C4.98749 5.82842 5.05887 5.61425 5.2346 5.59778L6.05832 5.5209C6.12422 5.51541 6.17913 5.47697 6.20659 5.41656L6.53059 4.65874C6.59648 4.49399 6.82163 4.49399 6.89302 4.65325Z" stroke="#F0C932" stroke-width="0.549146" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M10.4445 6.25931C10.4587 4.19697 8.79836 2.51361 6.73602 2.49941C4.67368 2.48522 2.99032 4.14557 2.97612 6.20791C2.96193 8.27025 4.62228 9.95361 6.68462 9.96781C8.74696 9.982 10.4303 8.32165 10.4445 6.25931Z" stroke="#F0C932" stroke-width="0.549146" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M6.20107 9.93054L5.27301 12.2644L4.09784 10.919L2.3241 11.0837L3.49927 8.14032" stroke="#F0C932" stroke-width="0.549146" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M7.21153 9.93054L8.14508 12.2644L9.31476 10.919L11.094 11.0837L9.91333 8.14032" stroke="#F0C932" stroke-width="0.549146" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="detail-items">
-                <h3>interesting learning</h3>
-                <p>Lorem ipsum dolor sit amet<br>, consectetur adipiscing elit<br>. Etiam dignissim, sem non<br> convallis molestie.</p>
+                
+              <div class="col-12 col-sm-12  col-md-8 d-md-flex justify-content-md-end flex-md-row">
+                <div class="about-end    ">
+                  <div class="end-items ">
+                    <div class="img-items"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M7.08778 6.90481C8.15231 6.90481 9.01529 6.04184 9.01529 4.97731C9.01529 3.91278 8.15231 3.0498 7.08778 3.0498C6.02325 3.0498 5.16028 3.91278 5.16028 4.97731C5.16028 6.04184 6.02325 6.90481 7.08778 6.90481Z" stroke="#F0C932" stroke-width="0.658976" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.6299 11.7263C10.9923 11.7263 11.2724 11.3749 11.1571 11.0234C10.6024 9.30461 8.99344 8.05804 7.0879 8.05804C5.18237 8.05804 3.57337 9.30461 3.01873 11.0234C2.9089 11.3694 3.18348 11.7263 3.54591 11.7263H10.6299Z" stroke="#F0C932" stroke-width="0.658976" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></div>
+                    <div class="detail-items">
+                      <h3>Professional Teacher</h3>
+                      <p>Lorem ipsum dolor sit amet<br>, consectetur adipiscing elit<br>. Etiam dignissim, sem non<br> convallis molestie.</p>
+                    </div>
+                  </div>
+                  <div class="end-items  ">
+                    <div class="img-items">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                        <path d="M12.2404 5.88336L7.68253 7.60218C7.48483 7.67906 7.27067 7.67906 7.07297 7.60218L2.51506 5.88336C2.27344 5.79549 2.27344 5.466 2.50957 5.37265L7.06748 3.65382C7.26517 3.57694 7.47934 3.57694 7.67703 3.65382L12.2349 5.37265C12.4711 5.46051 12.4711 5.79549 12.2404 5.88336Z" stroke="#F0C932" stroke-width="0.658976" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.33396 5.63071V8.44783" stroke="#F0C932" stroke-width="0.658976" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.89344 6.50943V9.96356C3.89344 10.4633 5.45302 10.8751 7.37503 10.8751C9.29704 10.8751 10.8566 10.4688 10.8566 9.96356V6.50943" stroke="#F0C932" stroke-width="0.658976" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="detail-items">
+                      <h3>Course Certificate</h3>
+                      <p>Lorem ipsum dolor sit amet<br>, consectetur adipiscing elit<br>. Etiam dignissim, sem non<br> convallis molestie.</p>
+                    </div>
+                  </div>
+                  <div class="end-items ">
+                    <div class="img-items">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M6.89302 4.65325L7.21702 5.41107C7.23899 5.47697 7.29939 5.51541 7.3598 5.5209L8.18352 5.59778C8.35924 5.61425 8.42514 5.82842 8.29884 5.94374L7.6783 6.48739C7.62888 6.53133 7.60691 6.59722 7.62339 6.65763L7.80461 7.46488C7.84305 7.63511 7.66183 7.76691 7.50807 7.67904L6.79967 7.2562C6.74475 7.22325 6.67336 7.22325 6.61845 7.2562L5.91005 7.67904C5.76178 7.76691 5.57507 7.63511 5.61351 7.46488L5.79473 6.65763C5.8112 6.59722 5.78924 6.53133 5.73982 6.48739L5.11928 5.94374C4.98749 5.82842 5.05887 5.61425 5.2346 5.59778L6.05832 5.5209C6.12422 5.51541 6.17913 5.47697 6.20659 5.41656L6.53059 4.65874C6.59648 4.49399 6.82163 4.49399 6.89302 4.65325Z" stroke="#F0C932" stroke-width="0.549146" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4445 6.25931C10.4587 4.19697 8.79836 2.51361 6.73602 2.49941C4.67368 2.48522 2.99032 4.14557 2.97612 6.20791C2.96193 8.27025 4.62228 9.95361 6.68462 9.96781C8.74696 9.982 10.4303 8.32165 10.4445 6.25931Z" stroke="#F0C932" stroke-width="0.549146" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.20107 9.93054L5.27301 12.2644L4.09784 10.919L2.3241 11.0837L3.49927 8.14032" stroke="#F0C932" stroke-width="0.549146" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.21153 9.93054L8.14508 12.2644L9.31476 10.919L11.094 11.0837L9.91333 8.14032" stroke="#F0C932" stroke-width="0.549146" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="detail-items">
+                      <h3>interesting learning</h3>
+                      <p>Lorem ipsum dolor sit amet<br>, consectetur adipiscing elit<br>. Etiam dignissim, sem non<br> convallis molestie.</p>
+                    </div>
+                  </div>
+                  
+                  
+                 </div>
               </div>
             </div>
             
-            
-           </div>
+          
+           
+          </div>
+          
 
 
 
@@ -117,23 +142,26 @@
 
 
           </div>
-        </div>
+        
 
       </section>
       <section class="article">
         <div class="container">
-          <div class="row">
-  
-            <div class="img-article">
-              <img src="assests/imges/article/Group 1964.png">
+          <div class="row  ">
+            <div class="d-md-flex ">
+              <div class=" col-sm-12 col-md-6"> 
+                <div class="img-article ">
+                <img src="assests/imges/article/Group 1964.png">
+              </div></div>
+   
+           <div class="col-sm-12 col-md-6"> <div class="info-article ">
+            <a href="#">SELECTED COURSE</a>
+            <div class="article-items">
+              <h2>People Taking<br> Courses</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Etiam dignissim, sem non convallis <br>molestie.</p>
             </div>
-            <div class="info-article">
-              <a href="#">SELECTED COURSE</a>
-              <div class="article-items">
-                <h2>People Taking<br> Courses</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Etiam dignissim, sem non convallis <br>molestie.</p>
-              </div>
-              <div class="article-detail">
+            <div class="d-none">
+              <div class="article-detail ">
                 <div class="row">
                   <span>6,000</span>
                   <span>4,000</span>
@@ -146,95 +174,119 @@
                   <span>Course</span>
                 </div>
               </div>
-             
             </div>
+           
+           
+          </div> </div>
+            </div>
+            
+         
+            
           </div>
         </div>
       </section>
 
       <section class="courses">
         <div class="container">
-          <div class="row">
-            <div class="course">
-              <div class="items">
-                <div class="course-card">
-                  <img src="assests/imges/course/computer.png" />
-                  <div class="course-info"><span>Best Course </span>
-                    <span>$ 20 USD</span></div>
+          <div class="row ">
+            <div class="d-md-flex justify-content-md-between flex-sm-wrap fs-6 ">
+              <div class="col-sm-12 col-md-6">
+              <div class="course ">
+                <div class="items ">
+                  <div class="course-card ">
+                    <img src="assests/imges/course/computer.png" class="img-fluid"/>
+                    <div class="fs-sm-6">
+                      <div class="course-info fs-6"><span>Best Course </span>
+                        <span>$ 20 USD</span></div>
+                    </div>
+                    
+                  </div>
+                  <div class="course-details ">
+                    <div class="fs-sm-6"><div class="row fs-6"><h2>HTML & CSS</h2> <span class="view">1,500 Views</span></div>
+                    <div class="row fs-6"><span>120 Videos</span><span>2 Teacher</span></div></div>
+                   
+                  </div>
+                  
                 </div>
-                <div class="course-details">
-                 <div class="row"><h2>HTML & CSS</h2> <span class="view">1,500 Views</span></div>
-                 <div class="row"><span>120 Videos</span><span>2 Teacher</span></div>
+                <div class="items ">
+                  <div class="course-card">
+                    <img src="assests/imges/course/photographer.png" />
+                    <div class="course-info "><span >Best Course </span>
+                      <span >$ 20 USD</span></div>
+                  </div>
+                  <div class="course-details">
+                   <div class="row fs-6"><h2>Photographer</h2> <span class="view">1,500 Views</span></div>
+                   <div class="row fs-6"><span>100 Videos</span><span>2 Teacher</span></div>
+                  </div>
+                  
                 </div>
-                
+                <div class="items ">
+                  <div class="course-card">
+                    <img src="assests/imges/course/coding.png" />
+                    <div class="course-info"><span>Best Course </span>
+                      <span>$ 20 USD</span></div>
+                  </div>
+                  <div class="course-details">
+                   <div class="row"><h2>JavaScript</h2> <span class="view">1,500 Views</span></div>
+                   <div class="row"><span>120 Videos</span><span>2 Teacher</span></div>
+                  </div>
+                  
+                </div>
+                <div class="items ">
+                  <div class="course-card">
+                    <img src="assests/imges/course/headphone.png" />
+                    <div class="course-info"><span>Best Course </span>
+                      <span>$ 20 USD</span></div>
+                  </div>
+                  <div class="course-details">
+                   <div class="row"><h2>Desain Grafis</h2><span class="view">1,500 Views</span></div>
+                   <div class="row"><span>120 Videos</span><span>2 Teacher</span></div>
+                  </div>
+                  
+                </div>
+              
+              
               </div>
-              <div class="items">
-                <div class="course-card">
-                  <img src="assests/imges/course/photographer.png" />
-                  <div class="course-info"><span>Best Course </span>
-                    <span>$ 20 USD</span></div>
+            </div>
+           
+            <div class="col-sm-12 col-md-6 d-md-flex justify-content-md-end" >
+              <div class="description ">
+                <p class="hint">AVAILABLE FOR YOU</p>
+                <div calss="about">
+                  <h2>Available Courses</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                    dignissim, sem non convallis molestie.
+                  </p>
                 </div>
-                <div class="course-details">
-                 <div class="row"><h2>Photographer</h2> <span class="view">1,500 Views</span></div>
-                 <div class="row"><span>100 Videos</span><span>2 Teacher</span></div>
-                </div>
-                
+                <a href="#">see all</a>
               </div>
-              <div class="items">
-                <div class="course-card">
-                  <img src="assests/imges/course/coding.png" />
-                  <div class="course-info"><span>Best Course </span>
-                    <span>$ 20 USD</span></div>
-                </div>
-                <div class="course-details">
-                 <div class="row"><h2>JavaScript</h2> <span class="view">1,500 Views</span></div>
-                 <div class="row"><span>120 Videos</span><span>2 Teacher</span></div>
-                </div>
-                
-              </div>
-              <div class="items">
-                <div class="course-card">
-                  <img src="assests/imges/course/headphone.png" />
-                  <div class="course-info"><span>Best Course </span>
-                    <span>$ 20 USD</span></div>
-                </div>
-                <div class="course-details">
-                 <div class="row"><h2>Desain Grafis</h2><span class="view">1,500 Views</span></div>
-                 <div class="row"><span>120 Videos</span><span>2 Teacher</span></div>
-                </div>
-                
-              </div>
+            </div></div>
             
             
-            </div>
-             
-            <div class="description">
-              <p class="hint">AVAILABLE FOR YOU</p>
-              <div calss="about">
-                <h2>Available Courses</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                  dignissim, sem non convallis molestie.
-                </p>
-              </div>
-              <a href="#">see all</a>
-            </div>
           </div>
         </div>
       </section>
       <section class="testmonials">
         <div class="container">
           <div class="row">
-            <div class="testmonial">
-              <div class="user-info">
-                <img src="assests/imges/user/userone.jpg"/>
-                <div class="user-data">
-                  <h2>jasmin</h2>
-                  <span>client</span>
-                </div>
-              </div>
-              <div class="rating">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+              <div class="d-md-flex gx-3">
+                <div class="col-sm-12 col-md-6 fs-6"><div class="testmonial ">
+                  <div class="user-info">
+                    <img src="assests/imges/user/userone.jpg"/>
+                    <div class="user-data ">
+                      <h2>jasmin</h2>
+                      <span>client</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
+                                        fill="#FFAA33" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                 fill="none">
                                 <path
                                     d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
@@ -258,63 +310,64 @@
                         d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
                         fill="#FFAA33" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                fill="none">
-                <path
-                    d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
-                    fill="#FFAA33" />
-            </svg>
-
-              </div>
-              <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum dapibus luctus." </blockquote>
-              
-            </div>
-            <div class="testmonial">
-              <div class="user-info">
-                <img src="assests/imges/user/userone.jpg"/>
-                <div class="user-data">
-                  <h2>jasmin</h2>
-                  <span>client</span>
+    
+                  </div>
+                  <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum dapibus luctus." </blockquote>
+                  
+                </div></div>
+                <div class="col-sm-12 col-md-6 fs-6 d-flex justify-content-md-end">
+                  <div class="testmonial ">
+                    <div class="user-info">
+                      <img src="assests/imges/user/userone.jpg"/>
+                      <div class="user-data">
+                        <h2>jasmin</h2>
+                        <span>client</span>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                      fill="none">
+                      <path
+                          d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
+                          fill="#FFAA33" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                      d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
+                      fill="#FFAA33" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+              fill="none">
+              <path
+                  d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
+                  fill="#FFAA33" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+          fill="none">
+          <path
+              d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
+              fill="#FFAA33" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+      fill="none">
+      <path
+          d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
+          fill="#FFAA33" />
+      </svg>
+            
+      
+                    </div>
+                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum dapibus luctus." </blockquote>
+                    
+                  </div>
                 </div>
               </div>
-              <div class="rating">
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                fill="none">
-                <path
-                    d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
-                    fill="#FFAA33" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-            fill="none">
-            <path
-                d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
-                fill="#FFAA33" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-        fill="none">
-        <path
-            d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
-            fill="#FFAA33" />
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-    fill="none">
-    <path
-        d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
-        fill="#FFAA33" />
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-fill="none">
-<path
-    d="M7.53834 1.10997C7.70914 0.699319 8.29086 0.699318 8.46166 1.10996L9.99874 4.80556C10.0707 4.97868 10.2336 5.09696 10.4204 5.11194L14.4102 5.4318C14.8535 5.46734 15.0332 6.02059 14.6955 6.30993L11.6557 8.91378C11.5133 9.03576 11.4512 9.22715 11.4947 9.40952L12.4234 13.3028C12.5265 13.7354 12.0559 14.0773 11.6764 13.8455L8.26063 11.7592C8.10062 11.6615 7.89938 11.6615 7.73937 11.7592L4.32363 13.8455C3.94408 14.0773 3.47345 13.7354 3.57665 13.3028L4.50534 9.40952C4.54884 9.22715 4.48665 9.03576 4.34426 8.91378L1.30453 6.30993C0.966758 6.02059 1.14652 5.46734 1.58985 5.4318L5.57955 5.11194C5.76645 5.09696 5.92925 4.97868 6.00126 4.80556L7.53834 1.10997Z"
-    fill="#FFAA33" />
-</svg>
-      
-
-              </div>
-              <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum dapibus luctus." </blockquote>
               
-            </div>
+            
+           
+            
              
             </div>
           
@@ -325,7 +378,7 @@ fill="none">
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="footer-start">
+          <div class="footer-start ">
             <div class="logo">
               <img src="assests/imges/puplic/Logo.svg" alt="logo" />
               <p>mangcoding Store</p>
@@ -434,9 +487,10 @@ fill="none">
               </svg>
             </div>
           </div>
-          <div class="footer-end">
-            <nav>
-              <div class="enditems">
+          <div class="footer-end ">
+            <nav  >
+              <div class="col-sm-12 col-md-3 "> 
+                <div class="enditems">
                 <h2>Home</h2>
                 <ul>
                   <li><a href="#">Product</a></li>
@@ -444,8 +498,9 @@ fill="none">
                   <li><a href="#">AboutUs</a></li>
                   <li><a href="#">Log in</a></li>
                 </ul>
-              </div>
-              <div class="enditems">
+              </div></div>
+             
+              <div class="col-sm-12 col-md-3"><div class="enditems ">
                 <h2>Course</h2>
                 <ul>
                   <li><a href="#">HTMK & CSS</a></li>
@@ -453,8 +508,9 @@ fill="none">
                   <li><a href="#">Fotographer</a></li>
                   <li><a href="#">Desain Grafis</a></li>
                 </ul>
-              </div>
-              <div class="enditems">
+              </div></div>
+              
+              <div class="col-sm-12 col-md-3"><div class="enditems ">
                 <h2>Article</h2>
                 <ul>
                   <li><a href="#">New </a></li>
@@ -462,19 +518,21 @@ fill="none">
                   <li><a href="#">Trend</a></li>
                   <li><a href="#">Popular</a></li>
                 </ul>
-              </div>
-
-              <div class="enditems">
+              </div></div>
+              
+              <div class="col-sm-12 col-md-3"><div class="enditems ">
                 <h2>Contact Us</h2>
                 <ul>
                   <li><a href="#">CCdoc123@gmail.com</a></li>
                 </ul>
-              </div>
+              </div></div>
+              
             </nav>
           </div>
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </body>
 </html>
